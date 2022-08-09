@@ -51,9 +51,19 @@ html, body, #container {
   padding-top: 0px;
 }
 
-piechart_3d {
-  background-color: #000;
+/* #chart_wrap {
+  position: relative;
+  padding-bottom: 100%;
+  height: 0;
+  overflow:hidden;
 }
+#piechart_3d {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+} */
 img {
   height: auto;
   max-width: 100%;
@@ -5835,7 +5845,7 @@ h5 {
 }
 
 svg {
-  color: "red";
+  color: red;
 }
 
 .footer-social {
@@ -6051,9 +6061,9 @@ select {
     float: none !important;
     text-align: center;
   }
-.footer-social{
-  justify-content: center;
-}
+  .footer-social{
+    justify-content: center;
+  }
   .footer-logo {
     text-align: center;
     margin-bottom: 20px;
@@ -6182,6 +6192,11 @@ select {
 
   .tab-content {
     padding: 40px 5px 0px;
+  }
+
+  .color-yellow {
+    color: #fdd700;
+    font-size: 18px;
   }
 }
 
@@ -6484,6 +6499,7 @@ select {
     display: flex;
   }
 }
+
 @media (min-width:1025px) and (max-width:1199px) {
   .team-member:hover .team-hover .desk {
     top: 54%;
